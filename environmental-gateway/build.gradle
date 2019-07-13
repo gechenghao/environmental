@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.beyond'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter:2.1.6.RELEASE'
+    compile 'org.springframework.boot:spring-boot:2.1.6.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-web:2.1.6.RELEASE'
+    compile 'org.springframework.boot:spring-boot-autoconfigure:2.1.6.RELEASE'
+    compile 'com.alibaba:fastjson:1.2.58'
+
+    compile 'org.projectlombok:lombok:1.18.8'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
